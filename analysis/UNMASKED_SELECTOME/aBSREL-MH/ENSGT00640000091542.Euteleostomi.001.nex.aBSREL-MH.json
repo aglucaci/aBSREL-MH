@@ -1,0 +1,951 @@
+{
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM / UCSD viral evolution group",
+   "citation":"Less Is More: An Adaptive Branch-Site Random Effects Model for Efficient Detection of Episodic Diversifying Selection (2015). Mol Biol Evol 32 (5): 1342-1353. v2.2 adds support for multiple-hit models",
+   "contact":"spond@temple.edu",
+   "info":"aBSREL (Adaptive branch-site random effects likelihood)\n                            uses an adaptive random effects branch-site model framework\n                            to test whether each branch has evolved under positive selection,\n                            using a procedure which infers an optimal number of rate categories per branch.",
+   "requirements":"in-frame codon alignment and a phylogenetic tree",
+   "version":"2.2"
+  },
+ "branch attributes":{
+   "0":{
+     "BIVM_CANFA":{
+       "Baseline MG94xREV":0.0267735830461015,
+       "Baseline MG94xREV omega ratio":0.06597771802479514,
+       "Corrected P-value":1,
+       "Full adaptive model":0.02683559793324739,
+       "Full adaptive model (non-synonymous subs/site)":0.004472522347929261,
+       "Full adaptive model (synonymous subs/site)":0.02236307558531808,
+       "LRT":0,
+       "Nucleotide GTR":0.02599675522385245,
+       "Rate Distributions":        [
+[0.05923360571447807, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"BIVM_CANFA",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.5421586215772971,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_AILME":{
+       "Baseline MG94xREV":0.0237466432822684,
+       "Baseline MG94xREV omega ratio":0.0569121129869008,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0238322936344471,
+       "Full adaptive model (non-synonymous subs/site)":0.003123370202681771,
+       "Full adaptive model (synonymous subs/site)":0.02070892343176532,
+       "LRT":0,
+       "Nucleotide GTR":0.02374853452727785,
+       "Rate Distributions":        [
+[0.05057486930323692, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_AILME",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":1.69057660619376
+      },
+     "ERCC5_CALJA":{
+       "Baseline MG94xREV":0.03137190189805063,
+       "Baseline MG94xREV omega ratio":0.1444917381583781,
+       "Corrected P-value":1,
+       "Full adaptive model":0.03094228902530016,
+       "Full adaptive model (non-synonymous subs/site)":0.007850005493265068,
+       "Full adaptive model (synonymous subs/site)":0.02309228353203513,
+       "LRT":0,
+       "Nucleotide GTR":0.02935693823337568,
+       "Rate Distributions":        [
+[0.1303458843734667, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_CALJA",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_CAVPO":{
+       "Baseline MG94xREV":0.1058786638294922,
+       "Baseline MG94xREV omega ratio":0.07003139325384249,
+       "Corrected P-value":1,
+       "Full adaptive model":0.1040351105977524,
+       "Full adaptive model (non-synonymous subs/site)":0.01723226601998489,
+       "Full adaptive model (synonymous subs/site)":0.08680284457776737,
+       "LRT":0,
+       "Nucleotide GTR":0.09407372609824961,
+       "Rate Distributions":        [
+[0.06379868372080591, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_CAVPO",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.3029188771415313,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0.3256563201543254
+      },
+     "ERCC5_CHICK":{
+       "Baseline MG94xREV":0.01452335896682329,
+       "Baseline MG94xREV omega ratio":0.2577959437121946,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01420092021484205,
+       "Full adaptive model (non-synonymous subs/site)":0.005383642265643939,
+       "Full adaptive model (synonymous subs/site)":0.008817277949198104,
+       "LRT":0,
+       "Nucleotide GTR":0.01514062103042932,
+       "Rate Distributions":        [
+[0.2341185934184814, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_CHICK",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_GGOR":{
+       "Baseline MG94xREV":0.003006215929449993,
+       "Baseline MG94xREV omega ratio":0.2828338452569172,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003006357057705952,
+       "Full adaptive model (non-synonymous subs/site)":0.001188319296095118,
+       "Full adaptive model (synonymous subs/site)":0.001818037761610833,
+       "LRT":0,
+       "Nucleotide GTR":0.003052230645113431,
+       "Rate Distributions":        [
+[0.2506250596889149, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_GGOR",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_HORSE":{
+       "Baseline MG94xREV":0.04636149204107515,
+       "Baseline MG94xREV omega ratio":0.0907129565271045,
+       "Corrected P-value":1,
+       "Full adaptive model":0.04609737601438575,
+       "Full adaptive model (non-synonymous subs/site)":0.00805007396149956,
+       "Full adaptive model (synonymous subs/site)":0.03804730205288622,
+       "LRT":0,
+       "Nucleotide GTR":0.04204619394028657,
+       "Rate Distributions":        [
+[0.08112790252464309, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_HORSE",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_HUMAN":{
+       "Baseline MG94xREV":0.002851511150776076,
+       "Baseline MG94xREV omega ratio":0.1135841688701696,
+       "Corrected P-value":1,
+       "Full adaptive model":0.002857081887241102,
+       "Full adaptive model (non-synonymous subs/site)":0.0005945011445352373,
+       "Full adaptive model (synonymous subs/site)":0.002262580742705865,
+       "LRT":0,
+       "Nucleotide GTR":0.002837038937905983,
+       "Rate Distributions":        [
+[0.1007494890300923, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_HUMAN",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_LATCH":{
+       "Baseline MG94xREV":0.2072970894366438,
+       "Baseline MG94xREV omega ratio":0.1099941286522924,
+       "Corrected P-value":1,
+       "Full adaptive model":0.2173963693866501,
+       "Full adaptive model (non-synonymous subs/site)":0.06398709150564193,
+       "Full adaptive model (synonymous subs/site)":0.1534092778810082,
+       "LRT":0,
+       "Nucleotide GTR":0.1766174304002237,
+       "Rate Distributions":        [
+[0.06619620521079342, 0.8113761643181796],
+        [0.6035642523016356, 0.1886238356818204] 
+        ],
+       "Rate classes":2,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_LATCH",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.4786432307231295,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_MACMU":{
+       "Baseline MG94xREV":0.01293993883525221,
+       "Baseline MG94xREV omega ratio":0.1843983044682779,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01295486786151727,
+       "Full adaptive model (non-synonymous subs/site)":0.004209787574867625,
+       "Full adaptive model (synonymous subs/site)":0.008745080286649668,
+       "LRT":0,
+       "Nucleotide GTR":0.01409887297887569,
+       "Rate Distributions":        [
+[0.1632478424330424, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_MACMU",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.2384091121971177,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_MELGA":{
+       "Baseline MG94xREV":0.02019771866184538,
+       "Baseline MG94xREV omega ratio":0.241701593663231,
+       "Corrected P-value":1,
+       "Full adaptive model":0.02052827414116568,
+       "Full adaptive model (non-synonymous subs/site)":0.007263432943668138,
+       "Full adaptive model (synonymous subs/site)":0.01326484119749752,
+       "LRT":0,
+       "Nucleotide GTR":0.01875262044759088,
+       "Rate Distributions":        [
+[0.2099588183709512, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_MELGA",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_MOUSE":{
+       "Baseline MG94xREV":0.1293519420810273,
+       "Baseline MG94xREV omega ratio":0.09868441984180777,
+       "Corrected P-value":1,
+       "Full adaptive model":0.1245383456789126,
+       "Full adaptive model (non-synonymous subs/site)":0.0252431555353187,
+       "Full adaptive model (synonymous subs/site)":0.09929519014359335,
+       "LRT":0,
+       "Nucleotide GTR":0.1076930741637355,
+       "Rate Distributions":        [
+[0.09103248365406891, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_MOUSE",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0.8342070439941569
+      },
+     "ERCC5_MYOLU":{
+       "Baseline MG94xREV":0.04435522496193185,
+       "Baseline MG94xREV omega ratio":0.05133119168183376,
+       "Corrected P-value":1,
+       "Full adaptive model":0.04432706831623748,
+       "Full adaptive model (non-synonymous subs/site)":0.004690424866385531,
+       "Full adaptive model (synonymous subs/site)":0.03963664344985197,
+       "LRT":0,
+       "Nucleotide GTR":0.04103964840398088,
+       "Rate Distributions":        [
+[0.04537426019911953, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_MYOLU",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_NOMLE":{
+       "Baseline MG94xREV":0.01135078160391171,
+       "Baseline MG94xREV omega ratio":0.1775349058854319,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01134701730724994,
+       "Full adaptive model (non-synonymous subs/site)":0.003571816966508626,
+       "Full adaptive model (synonymous subs/site)":0.007775200340741335,
+       "LRT":0,
+       "Nucleotide GTR":0.01102240595254385,
+       "Rate Distributions":        [
+[0.1580825849778419, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_NOMLE",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.2082646657133851,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_ORNAN":{
+       "Baseline MG94xREV":0.1293849286756458,
+       "Baseline MG94xREV omega ratio":0.1105099405387167,
+       "Corrected P-value":1,
+       "Full adaptive model":0.1265228689643919,
+       "Full adaptive model (non-synonymous subs/site)":0.03017874683171155,
+       "Full adaptive model (synonymous subs/site)":0.09634412213268029,
+       "LRT":0,
+       "Nucleotide GTR":0.1139589129074031,
+       "Rate Distributions":        [
+[0.1013248853396559, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_ORNAN",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.3391365523513165,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_PANTR":{
+       "Baseline MG94xREV":0.002158229662090428,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.002165697205984025,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.002165697205984025,
+       "LRT":0,
+       "Nucleotide GTR":0.002059110556926434,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_PANTR",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_PELSI":{
+       "Baseline MG94xREV":0.06758832424678499,
+       "Baseline MG94xREV omega ratio":0.1517641522195254,
+       "Corrected P-value":1,
+       "Full adaptive model":0.06739654792165238,
+       "Full adaptive model (non-synonymous subs/site)":0.0177435648440862,
+       "Full adaptive model (synonymous subs/site)":0.04965298307756616,
+       "LRT":0,
+       "Nucleotide GTR":0.06152324823069297,
+       "Rate Distributions":        [
+[0.1370218340170303, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_PELSI",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_RABIT":{
+       "Baseline MG94xREV":0.05647443316562892,
+       "Baseline MG94xREV omega ratio":0.08659958121529936,
+       "Corrected P-value":1,
+       "Full adaptive model":0.05587955891257337,
+       "Full adaptive model (non-synonymous subs/site)":0.009589381570685705,
+       "Full adaptive model (synonymous subs/site)":0.0462901773418876,
+       "LRT":0,
+       "Nucleotide GTR":0.04959967204217265,
+       "Rate Distributions":        [
+[0.07818052389408447, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_RABIT",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.02902879187047929,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_SPETR":{
+       "Baseline MG94xREV":0.08807907499635663,
+       "Baseline MG94xREV omega ratio":0.05136275557709687,
+       "Corrected P-value":1,
+       "Full adaptive model":0.08444485295164478,
+       "Full adaptive model (non-synonymous subs/site)":0.009340786057571869,
+       "Full adaptive model (synonymous subs/site)":0.07510406689407297,
+       "LRT":0,
+       "Nucleotide GTR":0.07056038539033846,
+       "Rate Distributions":        [
+[0.04768856057121989, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"ERCC5_SPETR",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "ERCC5_XENTR":{
+       "Baseline MG94xREV":0.4054731218738397,
+       "Baseline MG94xREV omega ratio":0.04354523300574508,
+       "Corrected P-value":1,
+       "Full adaptive model":3.15711185392315,
+       "Full adaptive model (non-synonymous subs/site)":2.868608019888832,
+       "Full adaptive model (synonymous subs/site)":0.288503834034317,
+       "LRT":2.953393761916232,
+       "Nucleotide GTR":0.1894493634609324,
+       "Rate Distributions":        [
+[0.08857352662148321, 0.8904304934396186],
+        [0.510044658431045, 0.08568380784000258],
+        [389.754814678389, 0.02388569872037887] 
+        ],
+       "Rate classes":3,
+       "Uncorrected P-value":0.08565673801264462,
+       "original name":"ERCC5_XENTR",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0.2087040740645956
+      },
+     "NODE_10":{
+       "Baseline MG94xREV":0.0007881879264380301,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0008728238632749247,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.0008728238632749247,
+       "LRT":0,
+       "Nucleotide GTR":0.001567776474302339,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_12":{
+       "Baseline MG94xREV":0.006247592671105356,
+       "Baseline MG94xREV omega ratio":0.3147248805503694,
+       "Corrected P-value":1,
+       "Full adaptive model":0.006386102766821864,
+       "Full adaptive model (non-synonymous subs/site)":0.002741762534441365,
+       "Full adaptive model (synonymous subs/site)":0.003644340232380485,
+       "LRT":0,
+       "Nucleotide GTR":0.005647650802008142,
+       "Rate Distributions":        [
+[0.2884729964117369, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_14":{
+       "Baseline MG94xREV":0.01079737115050352,
+       "Baseline MG94xREV omega ratio":0.2021195645964454,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01142312488614962,
+       "Full adaptive model (non-synonymous subs/site)":0.003429893387084427,
+       "Full adaptive model (synonymous subs/site)":0.00799323149906518,
+       "LRT":0,
+       "Nucleotide GTR":0.01216300654813263,
+       "Rate Distributions":        [
+[0.1645327942369692, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_17":{
+       "Baseline MG94xREV":0.01625672179304295,
+       "Baseline MG94xREV omega ratio":0.08402607441489438,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01747391365654957,
+       "Full adaptive model (non-synonymous subs/site)":0.003239071312626642,
+       "Full adaptive model (synonymous subs/site)":0.0142348423439229,
+       "LRT":0,
+       "Nucleotide GTR":0.0208339220495187,
+       "Rate Distributions":        [
+[0.06862912234091063, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.4986348241608893,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_20":{
+       "Baseline MG94xREV":0.01272887424950925,
+       "Baseline MG94xREV omega ratio":0.1559366693967993,
+       "Corrected P-value":1,
+       "Full adaptive model":0.01276995514448803,
+       "Full adaptive model (non-synonymous subs/site)":0.003335860002975268,
+       "Full adaptive model (synonymous subs/site)":0.009434095141512755,
+       "LRT":0,
+       "Nucleotide GTR":0.01500175546180637,
+       "Rate Distributions":        [
+[0.1355819288351158, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_21":{
+       "Baseline MG94xREV":0.006055261746514641,
+       "Baseline MG94xREV omega ratio":0.06189291296425324,
+       "Corrected P-value":1,
+       "Full adaptive model":0.006253466874497856,
+       "Full adaptive model (non-synonymous subs/site)":0.0008079667752768765,
+       "Full adaptive model (synonymous subs/site)":0.005445500099220977,
+       "LRT":0,
+       "Nucleotide GTR":0.005700590076132435,
+       "Rate Distributions":        [
+[0.05689183943179351, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_26":{
+       "Baseline MG94xREV":0.003464071695160201,
+       "Baseline MG94xREV omega ratio":0.2604300457918116,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003474611552247775,
+       "Full adaptive model (non-synonymous subs/site)":0.001305008135563743,
+       "Full adaptive model (synonymous subs/site)":0.002169603416684031,
+       "LRT":0,
+       "Nucleotide GTR":0.004096769561442243,
+       "Rate Distributions":        [
+[0.2306360049230649, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_28":{
+       "Baseline MG94xREV":0.002929912744776866,
+       "Baseline MG94xREV omega ratio":0.07548801908212671,
+       "Corrected P-value":1,
+       "Full adaptive model":0.00294716447772465,
+       "Full adaptive model (non-synonymous subs/site)":0.0004359306079741255,
+       "Full adaptive model (synonymous subs/site)":0.002511233869750522,
+       "LRT":0,
+       "Nucleotide GTR":0.002846504410873794,
+       "Rate Distributions":        [
+[0.0665617063122082, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_3":{
+       "Baseline MG94xREV":0.1267676213037753,
+       "Baseline MG94xREV omega ratio":0.1654093676075035,
+       "Corrected P-value":1,
+       "Full adaptive model":0.1230209338114497,
+       "Full adaptive model (non-synonymous subs/site)":0.03669395259881032,
+       "Full adaptive model (synonymous subs/site)":0.08632698121263942,
+       "LRT":0,
+       "Nucleotide GTR":0.1060831558785118,
+       "Rate Distributions":        [
+[0.1493028917649118, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.1668063636917105,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_30":{
+       "Baseline MG94xREV":0.004370805564463671,
+       "Baseline MG94xREV omega ratio":0.04245686367778441,
+       "Corrected P-value":1,
+       "Full adaptive model":0.004648190421749979,
+       "Full adaptive model (non-synonymous subs/site)":0.0003977289005666869,
+       "Full adaptive model (synonymous subs/site)":0.004250461521183291,
+       "LRT":0,
+       "Nucleotide GTR":0.00435373565413537,
+       "Rate Distributions":        [
+[0.03587941094649624, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_32":{
+       "Baseline MG94xREV":0.03114046131040804,
+       "Baseline MG94xREV omega ratio":0.09024207768883374,
+       "Corrected P-value":1,
+       "Full adaptive model":0.030669462801829,
+       "Full adaptive model (non-synonymous subs/site)":0.00565440922782024,
+       "Full adaptive model (synonymous subs/site)":0.02501505357400872,
+       "LRT":0,
+       "Nucleotide GTR":0.02977160530035405,
+       "Rate Distributions":        [
+[0.08070140470741044, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0.8716155563575699
+      },
+     "NODE_33":{
+       "Baseline MG94xREV":0.008274260777389167,
+       "Baseline MG94xREV omega ratio":0.1331443739079533,
+       "Corrected P-value":1,
+       "Full adaptive model":0.007576057410295347,
+       "Full adaptive model (non-synonymous subs/site)":0.001975651777498255,
+       "Full adaptive model (synonymous subs/site)":0.005600405632797087,
+       "LRT":0,
+       "Nucleotide GTR":0.007127724370758973,
+       "Rate Distributions":        [
+[0.1352649135817326, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_34":{
+       "Baseline MG94xREV":0.09396423447063081,
+       "Baseline MG94xREV omega ratio":0.06970800173124035,
+       "Corrected P-value":1,
+       "Full adaptive model":0.09067011218857068,
+       "Full adaptive model (non-synonymous subs/site)":0.01357062503971962,
+       "Full adaptive model (synonymous subs/site)":0.07709948714885104,
+       "LRT":0,
+       "Nucleotide GTR":0.06818130947654058,
+       "Rate Distributions":        [
+[0.06291270586546575, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.1323367562545786,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_36":{
+       "Baseline MG94xREV":0.07021660037669798,
+       "Baseline MG94xREV omega ratio":0.1000632057986318,
+       "Corrected P-value":1,
+       "Full adaptive model":0.06392804116201212,
+       "Full adaptive model (non-synonymous subs/site)":0.01845290420225481,
+       "Full adaptive model (synonymous subs/site)":0.04547513695975699,
+       "LRT":0,
+       "Nucleotide GTR":0.0572667489423704,
+       "Rate Distributions":        [
+[0.1051298743820633, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.8920015923503879,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_37":{
+       "Baseline MG94xREV":0.0936784003708475,
+       "Baseline MG94xREV omega ratio":0.01951290932984237,
+       "Corrected P-value":1,
+       "Full adaptive model":0.07402829678513388,
+       "Full adaptive model (non-synonymous subs/site)":0.005466565231032967,
+       "Full adaptive model (synonymous subs/site)":0.06856173155410086,
+       "LRT":0,
+       "Nucleotide GTR":0.05287412850389311,
+       "Rate Distributions":        [
+[0.02613590234688108, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.3102856016573327,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_5":{
+       "Baseline MG94xREV":0.04352116840050876,
+       "Baseline MG94xREV omega ratio":0.08029985589902386,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0446002643590204,
+       "Full adaptive model (non-synonymous subs/site)":0.008817402027371678,
+       "Full adaptive model (synonymous subs/site)":0.03578286233164881,
+       "LRT":0,
+       "Nucleotide GTR":0.03904051203913717,
+       "Rate Distributions":        [
+[0.06791169633369822, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.7237107265104231,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      },
+     "NODE_8":{
+       "Baseline MG94xREV":0.02458653300009216,
+       "Baseline MG94xREV omega ratio":0.1692117534717681,
+       "Corrected P-value":1,
+       "Full adaptive model":0.02453139182715458,
+       "Full adaptive model (non-synonymous subs/site)":0.007439084895571063,
+       "Full adaptive model (synonymous subs/site)":0.01709230693158351,
+       "LRT":0,
+       "Nucleotide GTR":0.0231995983481513,
+       "Rate Distributions":        [
+[0.1512334520105802, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "rate at which 2 nucleotides are changed instantly within a single codon":0.09077931249113921,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0.6320720926396709
+      },
+     "Q3B7N6_BOVIN":{
+       "Baseline MG94xREV":0.08205450296655718,
+       "Baseline MG94xREV omega ratio":0.07846538338434544,
+       "Corrected P-value":1,
+       "Full adaptive model":0.08150606482590082,
+       "Full adaptive model (non-synonymous subs/site)":0.01259698268703362,
+       "Full adaptive model (synonymous subs/site)":0.06890908213886716,
+       "LRT":0,
+       "Nucleotide GTR":0.07432543058864743,
+       "Rate Distributions":        [
+[0.07009455950638344, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Q3B7N6_BOVIN",
+       "rate at which 2 nucleotides are changed instantly within a single codon":0,
+       "rate at which 3 nucleotides are changed instantly within a single codon":0
+      }
+    },
+   "attributes":{
+     "Baseline MG94xREV":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Baseline MG94xREV omega ratio":{
+       "attribute type":"branch label",
+       "display order":1
+      },
+     "Corrected P-value":{
+       "attribute type":"branch label",
+       "display order":6
+      },
+     "Full adaptive model":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "Full adaptive model (non-synonymous subs/site)":{
+       "attribute type":"branch label",
+       "display order":10
+      },
+     "Full adaptive model (synonymous subs/site)":{
+       "attribute type":"branch label",
+       "display order":9
+      },
+     "LRT":{
+       "attribute type":"branch label",
+       "display order":4
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "Rate Distributions":{
+       "attribute type":"branch label",
+       "display order":3
+      },
+     "Rate classes":{
+       "attribute type":"branch label",
+       "display order":2
+      },
+     "Uncorrected P-value":{
+       "attribute type":"branch label",
+       "display order":5
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "rate at which 2 nucleotides are changed instantly within a single codon":{
+       "attribute type":"branch label",
+       "display order":7
+      },
+     "rate at which 3 nucleotides are changed instantly within a single codon":{
+       "attribute type":"branch label",
+       "display order":8
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865] 
+      ],
+     "name":"absrel.filter.default"
+    }
+  },
+ "fits":{
+   "Baseline MG94xREV":{
+     "AIC-c":31052.69327131851,
+     "Equilibrium frequencies":      [
+[0.03809221854111717],
+      [0.02189501287261211],
+      [0.03277165874369414],
+      [0.03193513798778731],
+      [0.01659424894840945],
+      [0.009538202505705232],
+      [0.01427643451793635],
+      [0.01391201799913879],
+      [0.01458302685281214],
+      [0.008382172866075489],
+      [0.01254613140882372],
+      [0.01222588215284625],
+      [0.02278046509468048],
+      [0.01309397550457012],
+      [0.01959858618630118],
+      [0.01909831782150794],
+      [0.02929921958067035],
+      [0.01684088809854476],
+      [0.02520682864711218],
+      [0.02456340575787703],
+      [0.01276372346732571],
+      [0.007336456114203574],
+      [0.01098094061700747],
+      [0.01070064401019399],
+      [0.01121676085760544],
+      [0.006447278020868984],
+      [0.009650051194531727],
+      [0.009403726521651307],
+      [0.01752194738246571],
+      [0.01007143396172134],
+      [0.01507455596274362],
+      [0.01468976680551671],
+      [0.03621176033482524],
+      [0.02081414496283866],
+      [0.03115385497750344],
+      [0.03035862985572936],
+      [0.01577505823683131],
+      [0.009067340165257218],
+      [0.01357166489637007],
+      [0.01322523814187416],
+      [0.01386312201218582],
+      [0.007968379016406294],
+      [0.01192677982814659],
+      [0.0116223399779881],
+      [0.0216558860029114],
+      [0.01244757908468251],
+      [0.01863108354042696],
+      [0.01815551139412539],
+      [0.01830298170606785],
+      [0.02669595353845941],
+      [0.01387184546068911],
+      [0.007973393164297602],
+      [0.01193428482229939],
+      [0.01162965340163082],
+      [0.007007018334151584],
+      [0.01048785013252328],
+      [0.010220140023941],
+      [0.01904316925089394],
+      [0.010945816543439],
+      [0.01638330000168068],
+      [0.01596510418776597] 
+      ],
+     "Log Likelihood":-15420.17127113053,
+     "Rate Distributions":{
+       "Per-branch delta":{
+         "2.5%":0,
+         "97.5%":1.001313761138505,
+         "Mean":0.34934417277168,
+         "Median":0.2334302721691653
+        },
+       "Per-branch omega":{
+         "2.5%":0,
+         "97.5%":0.3147248805503694,
+         "Mean":0.1214296768333294,
+         "Median":0.09868441984180777
+        },
+       "Per-branch psi":{
+         "2.5%":0,
+         "97.5%":1.890139677765267,
+         "Mean":0.72513567792973,
+         "Median":0.56028537484306
+        }
+      },
+     "display order":1,
+     "estimated parameters":166
+    },
+   "Full adaptive model":{
+     "AIC-c":31052.69327131851,
+     "Log Likelihood":-15352.69471760007,
+     "Rate Distributions":{
+      },
+     "display order":2,
+     "estimated parameters":172
+    },
+   "Nucleotide GTR":{
+     "AIC-c":31052.69327131851,
+     "Equilibrium frequencies":      [
+[0.3228961902087429],
+      [0.2043433492464664],
+      [0.2327997753440045],
+      [0.2399606852007863] 
+      ],
+     "Log Likelihood":-17324.81883253172,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":0.3213868274109399,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0.2321957255536607,
+       "Substitution rate from nucleotide C to nucleotide G":0.2623592407528451,
+       "Substitution rate from nucleotide C to nucleotide T":1.357935592812211,
+       "Substitution rate from nucleotide G to nucleotide T":0.2406252829513601
+      },
+     "display order":0,
+     "estimated parameters":47
+    }
+  },
+ "input":{
+   "file name":"/home/aglucaci/aBSREL-MH/data/selectome_trip_ammended/ENSGT00640000091542.Euteleostomi.001.nex",
+   "number of sequences":21,
+   "number of sites":866,
+   "partition count":1,
+   "trees":{
+     "0":"((((ERCC5_CHICK,ERCC5_MELGA)NODE_3,ERCC5_PELSI)NODE_5,((((((BIVM_CANFA,ERCC5_AILME)NODE_8,ERCC5_HORSE)NODE_10,ERCC5_MYOLU)NODE_12,Q3B7N6_BOVIN)NODE_14,(((ERCC5_SPETR,ERCC5_MOUSE)NODE_17,(ERCC5_RABIT,ERCC5_CAVPO)NODE_20)NODE_21,((((ERCC5_GGOR,ERCC5_HUMAN,ERCC5_PANTR)NODE_26,ERCC5_NOMLE)NODE_28,ERCC5_MACMU)NODE_30,ERCC5_CALJA)NODE_32)NODE_33)NODE_34,ERCC5_ORNAN)NODE_36)NODE_37,ERCC5_XENTR,ERCC5_LATCH)"
+    }
+  },
+ "test results":{
+   "P-value threshold":0.05,
+   "positive test results":0,
+   "tested":38
+  },
+ "tested":{
+   "0":{
+     "BIVM_CANFA":"test",
+     "ERCC5_AILME":"test",
+     "ERCC5_CALJA":"test",
+     "ERCC5_CAVPO":"test",
+     "ERCC5_CHICK":"test",
+     "ERCC5_GGOR":"test",
+     "ERCC5_HORSE":"test",
+     "ERCC5_HUMAN":"test",
+     "ERCC5_LATCH":"test",
+     "ERCC5_MACMU":"test",
+     "ERCC5_MELGA":"test",
+     "ERCC5_MOUSE":"test",
+     "ERCC5_MYOLU":"test",
+     "ERCC5_NOMLE":"test",
+     "ERCC5_ORNAN":"test",
+     "ERCC5_PANTR":"test",
+     "ERCC5_PELSI":"test",
+     "ERCC5_RABIT":"test",
+     "ERCC5_SPETR":"test",
+     "ERCC5_XENTR":"test",
+     "NODE_10":"test",
+     "NODE_12":"test",
+     "NODE_14":"test",
+     "NODE_17":"test",
+     "NODE_20":"test",
+     "NODE_21":"test",
+     "NODE_26":"test",
+     "NODE_28":"test",
+     "NODE_3":"test",
+     "NODE_30":"test",
+     "NODE_32":"test",
+     "NODE_33":"test",
+     "NODE_34":"test",
+     "NODE_36":"test",
+     "NODE_37":"test",
+     "NODE_5":"test",
+     "NODE_8":"test",
+     "Q3B7N6_BOVIN":"test"
+    }
+  },
+ "timers":{
+   "Baseline model fitting":{
+     "order":2,
+     "timer":64
+    },
+   "Complexity analysis":{
+     "order":3,
+     "timer":389
+    },
+   "Full adaptive model fitting":{
+     "order":4,
+     "timer":200
+    },
+   "Overall":{
+     "order":0,
+     "timer":714
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":1
+    },
+   "Testing for selection":{
+     "order":5,
+     "timer":58
+    }
+  }
+}
