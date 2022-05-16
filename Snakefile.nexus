@@ -18,7 +18,7 @@ import glob
 # Load the cluster json file, has information on submitting jobs.
 with open("cluster.json", "r") as in_c:
     cluster = json.load(in_c)
-# endwith
+# end with
 
 # Load the configuration yaml file.
 configfile: 'config.yml'
@@ -27,20 +27,16 @@ configfile: 'config.yml'
 # Declares
 # ---------------------------------------------------------------------
 # Get the important directories
-FASTA_DIR = config["DataDirectory"]
-TREE_DIR = config["DataDirectoryNewick"]
+DATA_DIR = config["DataDirectory"]
 
 # Glob all of the files
-FASTAS = glob.glob(os.path.join(FASTA_DIR, "*" + config["FileEndingFasta"]))
-TREES = glob.glob(os.path.join(TREE_DIR, "*" + config["FileEndingNewick"]))
+NEXUS_FILES = glob.glob(os.path.join(DATA_DIR, "*" + config["FileEndingNexus"]))
 
 # Get the basenames, need it for output
-FASTA_filenames = [os.path.basename(x) for x in FASTAS]
-TREE_filenames = [os.path.basename(x) for x in TREES]
+NEXUS_Filenames = [os.path.basename(x) for x in NEXUS_FILES]
 
 # Report to user
-print("# Number of fasta files to process:", len(FASTAS))
-print("# Number of accompanying tree files to process:", len(TREES))
+print("# Number of NEXUS files to process:", len(NEXUS_FILES))
 
 # Get main output directory
 OUTDIR = config["OutputDirectory"]
@@ -72,10 +68,10 @@ print("# We will use", PPN, "processors")
 # ---------------------------------------------------------------------
 rule all:
     input:
-        expand(os.path.join(OUTDIR_aBSRELMH, "{fasta}.aBSREL-MH.json"), fasta=FASTA_filenames),
-        expand(os.path.join(OUTDIR_aBSREL, "{fasta}.aBSREL.json"), fasta=FASTA_filenames),
-        expand(os.path.join(OUTDIR_aBSRELMH, "{fasta}.aBSRELS-MH.json"), fasta=FASTA_filenames),
-        expand(os.path.join(OUTDIR_aBSREL, "{fasta}.aBSRELS.json"), fasta=FASTA_filenames)
+        expand(os.path.join(OUTDIR_aBSRELMH, "{NEXUS}.aBSREL-MH.json"), NEXUS=NEXUS_Filenames),
+        expand(os.path.join(OUTDIR_aBSREL, "{NEXUS}.aBSREL.json"), NEXUS=NEXUS_Filenames),
+        expand(os.path.join(OUTDIR_aBSRELSMH, "{NEXUS}.aBSRELS-MH.json"), NEXUS=NEXUS_Filenames),
+        expand(os.path.join(OUTDIR_aBSRELS, "{NEXUS}.aBSRELS.json"), NEXUS=NEXUS_Filenames)
     #end input
 #end rule
 
@@ -85,45 +81,41 @@ rule all:
 
 rule aBSRELSMH:
     input:
-        fasta = os.path.join(FASTA_DIR, "{sample}"),
-        tree  = os.path.join(TREE_DIR, "{sample}-BioNJ_tree_hyphy.nwk") 
+        nexus = os.path.join(DATA_DIR, "{sample}")
     output:
-        output = os.path.join(OUTDIR_aBSRELMH, "{sample}.aBSRELS-MH.json")
+        output = os.path.join(OUTDIR_aBSRELSMH, "{sample}.aBSRELS-MH.json")
     shell:
-        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.fasta} --tree {input.tree} --output {output.output} --multiple-hits Double+Triple --srv Yes"
+        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.nexus} --output {output.output} --multiple-hits Double+Triple --srv Yes"
     #end shell
 #end rule 
 
 rule aBSRELMH:
     input:
-        fasta = os.path.join(FASTA_DIR, "{sample}"),
-        tree  = os.path.join(TREE_DIR, "{sample}-BioNJ_tree_hyphy.nwk") 
+        nexus = os.path.join(DATA_DIR, "{sample}") 
     output:
         output = os.path.join(OUTDIR_aBSRELMH, "{sample}.aBSREL-MH.json")
     shell:
-        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.fasta} --tree {input.tree} --output {output.output} --multiple-hits Double+Triple"
+        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.nexus} --output {output.output} --multiple-hits Double+Triple"
     #end shell
 #end rule
 
 rule aBSREL:
     input:
-        fasta = os.path.join(FASTA_DIR, "{sample}"),
-        tree  = os.path.join(TREE_DIR, "{sample}-BioNJ_tree_hyphy.nwk") 
+        nexus = os.path.join(DATA_DIR, "{sample}") 
     output:
         output = os.path.join(OUTDIR_aBSREL, "{sample}.aBSREL.json")
     shell:
-        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.fasta} --tree {input.tree} --output {output.output}"
+        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.nexus} --output {output.output}"
     #end shell
 #end rule
 
 rule aBSRELS:
     input:
-        fasta = os.path.join(FASTA_DIR, "{sample}"),
-        tree  = os.path.join(TREE_DIR, "{sample}-BioNJ_tree_hyphy.nwk") 
+        nexus = os.path.join(DATA_DIR, "{sample}") 
     output:
-        output = os.path.join(OUTDIR_aBSREL, "{sample}.aBSRELS.json")
+        output = os.path.join(OUTDIR_aBSRELS, "{sample}.aBSRELS.json")
     shell:
-        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.fasta} --tree {input.tree} --output {output.output} --srv Yes"
+        "mpirun -np {PPN} {hyphy} aBSREL --alignment {input.nexus} --output {output.output} --srv Yes"
     #end shell
 #end rule
 
